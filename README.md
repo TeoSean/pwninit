@@ -37,25 +37,9 @@ alias pwninit='pwninit --template-path ~/.config/pwninit-template.py --template-
 
 ## Install
 
-### Arch Linux
+`cargo install --git https://github.com/TeoSean/pwninit.git`
 
-Install [`pwninit`](https://aur.archlinux.org/packages/pwninit/) or
-[`pwninit-bin`](https://aur.archlinux.org/packages/pwninit-bin/) from the AUR.
-
-### Download
-
-You can download statically-linked [musl](https://www.musl-libc.org/)
-binaries from the [releases page](https://github.com/io12/pwninit/releases).
-
-### Using cargo
-
-Run
-
-```sh
-cargo install pwninit
-```
-
-This places the binary in `~/.cargo/bin`.
+This places the binary in `~/.cargo/bin`. Make sure that it is in your path.
 
 Note that `openssl`, `liblzma`, and `pkg-config` are required for the build.
 
